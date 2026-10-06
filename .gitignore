@@ -1,0 +1,17 @@
+.env
+.venv
+output
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# Claude Code 本地配置
+.claude/
+
+# IDE (PyCharm)
+.idea/
+
+pyproject.toml
+
+uv.lock

@@ -1,0 +1,430 @@
+================================================================================
+                    16-WEEK PYTHON STUDY PLAN
+================================================================================
+Start date ....... Tuesday, October 6, 2026
+End date ......... Monday, January 25, 2027
+Total weeks ...... 16
+Estimated total .. 160 hours (~10 h/week average)
+
+HOW TO READ THIS PLAN
+  * Each week runs Tuesday -> Monday. The deadline is the Monday it ends on.
+  * Sub-tasks are study units, not calendar days -- do them in whatever order
+    fits your week, but finish all of them (and the deliverable) by the deadline.
+  * Hours are estimates for a focused learner. If a week runs long, cut the
+    optional sub-task rather than the deliverable -- the deliverable is what
+    proves the week's material stuck.
+
+HOW THE 16 WEEKS FIT TOGETHER
+  Phase 1  Weeks 1-4    Foundations: syntax, control flow, data structures
+  Phase 2  Weeks 5-8    Working code: files, errors, modules, OOP
+  Phase 3  Weeks 9-13   Depth: generators, testing, APIs, databases
+  Phase 4  Weeks 14-16  Real project: packaging, async, capstone
+
+  Note on Weeks 12-13: these land on the winter holidays (Dec 22 - Jan 4).
+  They are deliberately lighter -- review and consolidation rather than new
+  material -- so a disrupted week doesn't derail the plan.
+
+--------------------------------------------------------------------------------
+  WEEK   DATES                     FOCUS                               HOURS
+--------------------------------------------------------------------------------
+    1    Oct 06 - Oct 12, 2026     Environment & first programs           10
+    2    Oct 13 - Oct 19, 2026     Control flow & functions               10
+    3    Oct 20 - Oct 26, 2026     Data structures I: lists & tuples      10
+    4    Oct 27 - Nov 02, 2026     Data structures II: dicts & sets       10
+    5    Nov 03 - Nov 09, 2026     Strings & text processing              10
+    6    Nov 10 - Nov 16, 2026     Files, errors & exceptions             11
+    7    Nov 17 - Nov 23, 2026     Modules, packages & project layout     10
+    8    Nov 24 - Nov 30, 2026     Object-oriented Python                 11
+    9    Dec 01 - Dec 07, 2026     Iterators, generators & decorators     10
+   10    Dec 08 - Dec 14, 2026     Testing, debugging & type hints        11
+   11    Dec 15 - Dec 21, 2026     APIs & external libraries              10
+   12    Dec 22 - Dec 28, 2026     Consolidation (light week)              6
+   13    Dec 29 - Jan 04, 2027     Databases & persistence (light week)    8
+   14    Jan 05 - Jan 11, 2027     Concurrency & packaging                11
+   15    Jan 12 - Jan 18, 2027     Capstone build                         12
+   16    Jan 19 - Jan 25, 2027     Capstone polish & wrap-up              10
+--------------------------------------------------------------------------------
+                                                                TOTAL     160
+--------------------------------------------------------------------------------
+
+
+PHASE 1 -- FOUNDATIONS
+
+
+================================================================================
+WEEK 1 -- Environment & first programs
+================================================================================
+Dates ......... Tue Oct 06 - Mon Oct 12, 2026
+Deadline ...... Monday, October 12, 2026
+Est. hours .... 10
+
+Topic
+  Getting a working Python environment and writing your first real programs. Variables, the core built-in types, and reading/writing to the terminal.
+
+Sub-tasks
+  1.1  Install Python 3.12+ and verify with `python --version` (2.0 h)
+  1.2  Set up an editor/IDE: interpreter selection, run config, formatter (2.0 h)
+  1.3  Create a virtual environment (`.venv`) and learn why it exists (1.0 h)
+  1.4  Core types drill: int, float, str, bool, None -- conversions and arithmetic, `type()` and `isinstance()` (2.0 h)
+  1.5  f-strings and `input()` / `print()` formatting (1.0 h)
+  1.6  Write 3 small scripts: temperature converter, tip calculator, greeting generator (2.0 h)
+
+Deliverable
+  Three working scripts committed to this repo, each runnable with `python script.py` from the command line.
+
+
+================================================================================
+WEEK 2 -- Control flow & functions
+================================================================================
+Dates ......... Tue Oct 13 - Mon Oct 19, 2026
+Deadline ...... Monday, October 19, 2026
+Est. hours .... 10
+
+Topic
+  Making decisions and repeating work: conditionals, loops, and breaking programs into reusable functions.
+
+Sub-tasks
+  2.1  Booleans, comparisons, truthiness, `and` / `or` / `not` (1.5 h)
+  2.2  if / elif / else, including nested and early-return style (1.5 h)
+  2.3  Loops: `while`, `for`, `range()`, `enumerate()`, `break` / `continue`, loop `else` (2.0 h)
+  2.4  Defining functions: parameters, defaults, `*args` / `**kwargs`, return values, scope, docstrings (2.5 h)
+  2.5  Build a number-guessing game with input validation and a replay loop (1.5 h)
+  2.6  FizzBuzz, plus 5 function exercises from any practice site (1.0 h)
+
+Deliverable
+  Number-guessing game: loops until the user quits, validates input, and reports the number of attempts at the end.
+
+
+================================================================================
+WEEK 3 -- Data structures I: lists & tuples
+================================================================================
+Dates ......... Tue Oct 20 - Mon Oct 26, 2026
+Deadline ...... Monday, October 26, 2026
+Est. hours .... 10
+
+Topic
+  Storing collections of things: lists, tuples, slicing, and comprehensions.
+
+Sub-tasks
+  3.1  List creation, indexing, slicing, negative indices (2.0 h)
+  3.2  Mutating methods: append, extend, insert, remove, pop, sort, reverse (2.0 h)
+  3.3  Tuples, immutability, unpacking, swapping, `sorted(key=...)` (1.5 h)
+  3.4  List comprehensions and when NOT to use them (2.0 h)
+  3.5  Nested lists and 2D iteration (1.0 h)
+  3.6  Build an in-memory to-do list app: add, list, complete, delete (1.5 h)
+
+Deliverable
+  To-do list app that runs on a menu loop and keeps items in a list for the duration of the session.
+
+
+================================================================================
+WEEK 4 -- Data structures II: dicts & sets  [checkpoint]
+================================================================================
+Dates ......... Tue Oct 27 - Mon Nov 02, 2026
+Deadline ...... Monday, November 02, 2026
+Est. hours .... 10
+
+Topic
+  Key-value data and uniqueness: dictionaries, sets, and choosing the right structure for the job.
+
+Sub-tasks
+  4.1  Dict basics: creation, lookup, `get()`, assignment, deletion, iteration over keys/values/items (2.0 h)
+  4.2  Nested dicts and dicts of lists -- modeling structured records (2.0 h)
+  4.3  Sets: uniqueness, membership testing, union/intersection/difference (1.5 h)
+  4.4  `zip()`, `enumerate()`, and dict/list comprehensions (2.0 h)
+  4.5  Refactor the Week 3 to-do app to store task records as dicts (1.5 h)
+  4.6  CHECKPOINT: timed 45-min exercise covering Weeks 1-4 (1.0 h)
+
+Deliverable
+  Refactored to-do app using dicts per task (id, title, done, created date), plus a written note on when to use list vs tuple vs dict vs set.
+
+
+PHASE 2 -- WORKING CODE
+
+
+================================================================================
+WEEK 5 -- Strings & text processing
+================================================================================
+Dates ......... Tue Nov 03 - Mon Nov 09, 2026
+Deadline ...... Monday, November 09, 2026
+Est. hours .... 10
+
+Topic
+  Everything is text somewhere. String methods, formatting, and a first pass at regular expressions.
+
+Sub-tasks
+  5.1  String methods: split, join, strip, replace, startswith/endswith, case operations (2.0 h)
+  5.2  Formatting: f-string specs, alignment, padding, number formatting (1.5 h)
+  5.3  Regular expressions with `re`: match/search/findall, groups, character classes, quantifiers (3.0 h)
+  5.4  Encodings: UTF-8, why `open()` needs an encoding argument (1.0 h)
+  5.5  Build a log-line parser that extracts timestamp, level, and message (2.5 h)
+
+Deliverable
+  Log parser that reads a text log and prints a per-level summary (e.g. "ERROR: 12, WARN: 30, INFO: 118").
+
+
+================================================================================
+WEEK 6 -- Files, errors & exceptions
+================================================================================
+Dates ......... Tue Nov 10 - Mon Nov 16, 2026
+Deadline ...... Monday, November 16, 2026
+Est. hours .... 11
+
+Topic
+  Making programs survive the real world: reading and writing files, handling failure gracefully, and persisting data in standard formats.
+
+Sub-tasks
+  6.1  File I/O: `open()` modes, `with` blocks, line iteration, pathlib (2.5 h)
+  6.2  JSON: `json.load` / `json.dump`, serializing dicts and lists (2.0 h)
+  6.3  CSV: the `csv` module, DictReader / DictWriter (1.5 h)
+  6.4  Exceptions: try / except / else / finally, common exception types, raising your own, custom exception classes (2.5 h)
+  6.5  Validation patterns: fail fast vs. collect errors (1.0 h)
+  6.6  Make the to-do app persistent by saving/loading JSON (1.5 h)
+
+Deliverable
+  To-do app that saves tasks to a JSON file and reloads them on startup, with every file operation error-handled (missing file, corrupt JSON, no write permission).
+
+
+================================================================================
+WEEK 7 -- Modules, packages & project layout
+================================================================================
+Dates ......... Tue Nov 17 - Mon Nov 23, 2026
+Deadline ...... Monday, November 23, 2026
+Est. hours .... 10
+
+Topic
+  Structuring code across files and installing other people's code. Also the
+  stdlib tour -- the batteries that ship with Python.
+
+Sub-tasks
+  7.1  Imports: `import x`, `from x import y`, aliasing, `__name__ == "__main__"` (1.5 h)
+  7.2  Split the to-do app into modules (storage / logic / cli) (2.0 h)
+  7.3  Packages: `__init__.py`, subpackages, absolute vs relative imports (1.5 h)
+  7.4  `pyproject.toml`, pip, installing dependencies, freezing requirements (2.0 h)
+  7.5  Stdlib tour: os, sys, pathlib, datetime, random, argparse, itertools(skim each, build one tiny demo per module) (2.0 h)
+  7.6  Give the app a CLI with `argparse` (add / list / done / delete) (1.0 h)
+
+Deliverable
+  To-do app restructured into a package with a working argparse CLI, plus a README explaining how to install and run it.
+
+
+================================================================================
+WEEK 8 -- Object-oriented Python
+================================================================================
+Dates ......... Tue Nov 24 - Mon Nov 30, 2026
+Deadline ...... Monday, November 30, 2026
+Est. hours .... 11
+
+Topic
+  Modeling your problem in types: classes, objects, and the parts of OOP that actually pull their weight in Python.
+
+Sub-tasks
+  8.1  Classes and instances: `__init__`, attributes, methods, `self` (2.0 h)
+  8.2  `__repr__` / `__str__`, equality, and other dunder methods worth knowing (1.5 h)
+  8.3  Inheritance, `super()`, and when composition beats inheritance (2.0 h)
+  8.4  dataclasses for record-like types (1.5 h)
+  8.5  Properties and controlled attribute access (1.5 h)
+  8.6  Refactor the to-do app into classes: Task, TaskStore, CLI (2.5 h)
+
+Deliverable
+  Object-oriented version of the to-do app, with at least one case where you chose composition over inheritance and can explain why.
+
+
+PHASE 3 -- DEPTH
+
+
+================================================================================
+WEEK 9 -- Iterators, generators & decorators
+================================================================================
+Dates ......... Tue Dec 01 - Mon Dec 07, 2026
+Deadline ...... Monday, December 07, 2026
+Est. hours .... 10
+
+Topic
+  The machinery underneath loops: lazy evaluation, and wrapping functions in reusable behavior.
+
+Sub-tasks
+  9.1  Iterables vs. iterators, the iteration protocol, `next()` (1.5 h)
+  9.2  Generators: `yield`, generator expressions, pipelines, lazy file reads (2.5 h)
+  9.3  `itertools`: chain, islice, groupby, product, combinations (2.0 h)
+  9.4  Closures and first-class functions (1.0 h)
+  9.5  Decorators: writing them, `functools.wraps`, decorators with arguments (2.0 h)
+  9.6  Build 3 decorators: timer, retry, memoize (1.0 h)
+
+Deliverable
+  A generator-based log reader that never loads the whole file into memory, plus the three decorators with short usage examples.
+
+
+================================================================================
+WEEK 10 -- Testing, debugging & type hints
+================================================================================
+Dates ......... Tue Dec 08 - Mon Dec 14, 2026
+Deadline ...... Monday, December 14, 2026
+Est. hours .... 11
+
+Topic
+  How to know your code works -- and how to find out why when it doesn't.
+
+Sub-tasks
+  10.1  pytest basics: test discovery, assertions, running one test (2.0 h)
+  10.2  Fixtures, parametrize, tmp_path for file tests (2.5 h)
+  10.3  Test the to-do app: aim for meaningful coverage of storage + logic (2.5 h)
+  10.4  Debugging: `pdb` / breakpoints, stepping, inspecting state, strategies for isolating a bug (2.0 h)
+  10.5  Type hints and `mypy`; annotate the to-do app's public functions (1.5 h)
+  10.6  Set up a formatter/linter (ruff or black + flake8) (0.5 h)
+
+Deliverable
+  A test suite for the to-do app that passes from a clean checkout, and a short written debugging post-mortem of one bug you actually hit.
+
+
+================================================================================
+WEEK 11 -- APIs & external libraries
+================================================================================
+Dates ......... Tue Dec 15 - Mon Dec 21, 2026
+Deadline ...... Monday, December 21, 2026
+Est. hours .... 10
+
+Topic
+  Talking to the outside world: HTTP, JSON APIs, and depending on packages you didn't write.
+
+Sub-tasks
+  11.1  HTTP fundamentals: methods, status codes, headers, JSON bodies (1.5 h)
+  11.2  `requests` (or `httpx`): GET, params, timeouts, raise_for_status (2.0 h)
+  11.3  Handling failure: retries, backoff, rate limits, offline behavior (2.0 h)
+  11.4  Reading API docs and finding the fields you need (1.0 h)
+  11.5  Environment variables and API keys -- never commit a secret (1.0 h)
+  11.6  Build a CLI app that hits a public API and caches results locally (2.5 h)
+
+Deliverable
+  A working CLI tool that fetches data from a public API, caches responses to disk, degrades gracefully when offline, and reads its key from an env var.
+
+
+================================================================================
+WEEK 12 -- Consolidation  [light week -- holidays]
+================================================================================
+Dates ......... Tue Dec 22 - Mon Dec 28, 2026
+Deadline ...... Monday, December 28, 2026
+Est. hours .... 6
+
+Topic
+  No new material. Go back over the first eleven weeks and find the gaps.
+
+Sub-tasks
+  12.1  Re-read your notes; list the 5 concepts you're least sure about (1.0 h)
+  12.2  Rewrite the 3 hardest exercises from scratch, no notes (2.0 h)
+  12.3  Refactor the to-do app for readability; delete dead code (1.5 h)
+  12.4  Write a one-page summary of Python you'd hand to yourself in Week 1 (1.5 h)
+
+Deliverable
+  A written "gaps list" with each item either resolved or scheduled into a later week, and the refactored app committed.
+
+
+================================================================================
+WEEK 13 -- Databases & persistence  [light week -- holidays]
+================================================================================
+Dates ......... Tue Dec 29 - Mon Jan 04, 2027
+Deadline ...... Monday, January 04, 2027
+Est. hours .... 8
+
+Topic
+  Structured storage beyond flat files: SQLite, SQL basics, and using a database from Python.
+
+Sub-tasks
+  13.1  Why a database: concurrency, queries, integrity vs. flat JSON (1.0 h)
+  13.2  SQLite basics: tables, columns, types, primary keys (1.5 h)
+  13.3  `sqlite3` module: connect, cursor, execute, commit, fetch (2.0 h)
+  13.4  Parameterized queries and SQL injection (1.0 h)
+  13.5  CRUD: insert, select, update, delete from Python (1.5 h)
+  13.6  Move the to-do app's storage from JSON to SQLite (1.0 h)
+
+Deliverable
+  To-do app backed by a SQLite database, with a migration path that imports an existing JSON file on first run.
+
+
+PHASE 4 -- REAL PROJECT
+
+
+================================================================================
+WEEK 14 -- Concurrency & packaging
+================================================================================
+Dates ......... Tue Jan 05 - Mon Jan 11, 2027
+Deadline ...... Monday, January 11, 2027
+Est. hours .... 11
+
+Topic
+  Doing several things at once, and shipping code as an installable package.
+
+Sub-tasks
+  14.1  Threads vs. processes vs. asyncio -- which problem each solves (1.5 h)
+  14.2  `async` / `await`, the event loop, `asyncio.gather`, timeouts (2.5 h)
+  14.3  An async downloader for N URLs; compare against a sequential version (2.0 h)
+  14.4  Threading for I/O-bound work, `concurrent.futures` (1.5 h)
+  14.5  Packaging: build a wheel, `pip install -e .`, install from a local path (2.0 h)
+  14.6  Optional: publish to TestPyPI (1.5 h)
+
+Deliverable
+  An async program that fetches several URLs concurrently with a measurable speedup over the sequential version, and the to-do app installable as a package (`pip install -e .` then run the CLI from anywhere).
+
+
+================================================================================
+WEEK 15 -- Capstone build
+================================================================================
+Dates ......... Tue Jan 12 - Mon Jan 18, 2027
+Deadline ...... Monday, January 18, 2027
+Est. hours .... 12
+
+Topic
+  Build something real, end to end, of your own choosing. Suggestions: a CLI tool you'd actually use, a web scraper with a report, or a small Flask/FastAPI service.
+
+Sub-tasks
+  15.1  Write a one-page spec: problem, users, features in/out of scope (1.5 h)
+  15.2  Scaffold the project: package layout, pyproject, git, README stub (1.5 h)
+  15.3  Implement the core feature end to end -- ugly but working (4.0 h)
+  15.4  Add persistence or an external API/database integration (2.5 h)
+  15.5  Write tests for the core logic (2.5 h)
+
+Deliverable
+  A working capstone project in its own repo (or directory) that does the core thing its spec promised, with tests that pass.
+
+
+================================================================================
+WEEK 16 -- Capstone polish & wrap-up
+================================================================================
+Dates ......... Tue Jan 19 - Mon Jan 25, 2027
+Deadline ...... Monday, January 25, 2027
+Est. hours .... 10
+
+Topic
+  Finish, document, and ship. Then decide what the next 16 weeks are for.
+
+Sub-tasks
+  16.1  Finish remaining features; fix known bugs; no new scope (3.0 h)
+  16.2  Polish the CLI/UX and error messages (1.5 h)
+  16.3  Write the README: what it does, install, usage, examples (1.5 h)
+  16.4  Add type hints and run the linter/formatter across the project (1.5 h)
+  16.5  Push to GitHub with a clean commit history (1.0 h)
+  16.6  Retrospective: what worked, what didn't, what to study next, sketch the next 16 weeks (1.5 h)
+
+Deliverable
+  A documented, tested, published capstone project you can show someone --
+  plus a written retrospective and a draft plan for the next 16 weeks.
+
+
+================================================================================
+APPENDIX -- DEADLINE QUICK REFERENCE
+================================================================================
+  Week  1   Mon Oct 12, 2026      Week  9   Mon Dec 07, 2026
+  Week  2   Mon Oct 19, 2026      Week 10   Mon Dec 14, 2026
+  Week  3   Mon Oct 26, 2026      Week 11   Mon Dec 21, 2026
+  Week  4   Mon Nov 02, 2026      Week 12   Mon Dec 28, 2026
+  Week  5   Mon Nov 09, 2026      Week 13   Mon Jan 04, 2027
+  Week  6   Mon Nov 16, 2026      Week 14   Mon Jan 11, 2027
+  Week  7   Mon Nov 23, 2026      Week 15   Mon Jan 18, 2027
+  Week  8   Mon Nov 30, 2026      Week 16   Mon Jan 25, 2027
+
+Checkpoints
+  Week 4   Timed exercise over Weeks 1-4
+  Week 8   OOP refactor of the running project
+  Week 12  No-notes rewrite of the hardest exercises
+  Week 16  Published capstone + retrospective
+================================================================================

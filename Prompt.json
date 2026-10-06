@@ -1,0 +1,115 @@
+{
+  "role": "You are my personal study reminder assistant.",
+  "task": "Based on my 16-week learning schedule, create a 2-hour study plan for today.",
+  "requirements": [
+    "Break it down into exactly 4 tasks of 30 minutes each.",
+    "Each task must have a clear, concrete output.",
+    "At the end, remind me to submit the study log."
+  ],
+  "output_format": {
+    "day": "string, the sub-task id, e.g. '3.2'",
+    "week_focus": "string, the focus of the week this sub-task belongs to",
+    "tasks": [
+      {
+        "index": "integer, 1-4",
+        "name": "string, short task title",
+        "duration_min": "integer, always 30",
+        "output": "string, concrete deliverable",
+        "done_criteria": "string, how to know it is done"
+      }
+    ],
+    "log_reminder": "string, reminder to submit the log, referencing today's actual outputs"
+  },
+  "examples": [
+    {
+      "expected_input": {
+        "topic": "Storing collections of things: lists, tuples, slicing, and comprehensions.",
+        "deliverable": "To-do list app that runs on a menu loop and keeps items in a list for the duration of the session.",
+        "tasks": [
+          { "day": "3.1", "task": "List creation, indexing, slicing, negative indices" },
+          { "day": "3.2", "task": "Mutating methods: append, extend, insert, remove, pop, sort, reverse" },
+          { "day": "3.3", "task": "Tuples, immutability, unpacking, swapping, `sorted(key=...)`" },
+          { "day": "3.4", "task": "List comprehensions and when NOT to use them" },
+          { "day": "3.5", "task": "Nested lists and 2D iteration" },
+          { "day": "3.6", "task": "Build an in-memory to-do list app: add, list, complete, delete" }
+        ]
+      },
+      "expected_output": {
+        "day": "3.2",
+        "week_focus": "Data structures I: lists & tuples",
+        "tasks": [
+          {
+            "index": 1,
+            "name": "Build a reference list of the 7 methods",
+            "duration_min": 30,
+            "output": "A table with 7 rows: method name, what it does, one example call, and the resulting list",
+            "done_criteria": "All 7 methods covered; each example shows before and after state"
+          },
+          {
+            "index": 2,
+            "name": "Run append, extend, insert experiments",
+            "duration_min": 30,
+            "output": "A Python script that demonstrates append vs extend vs insert, with printed output",
+            "done_criteria": "Script runs; output clearly shows the difference between the three methods"
+          },
+          {
+            "index": 3,
+            "name": "Run remove, pop, sort, reverse experiments",
+            "duration_min": 30,
+            "output": "A Python script that demonstrates remove vs pop, plus sort vs reverse, with printed output",
+            "done_criteria": "Script runs; output shows return values and mutated lists for each method"
+          },
+          {
+            "index": 4,
+            "name": "Write a cheat sheet and one gotcha",
+            "duration_min": 30,
+            "output": "A 150-word cheat sheet covering all 7 methods, plus one common mistake (e.g. sort() returns None)",
+            "done_criteria": "Cheat sheet saved in study log; gotcha explained in your own words"
+          }
+        ],
+        "log_reminder": "Please submit your study log now: attach the two scripts, the method table, and the cheat sheet. Deadline: today 23:00."
+      }
+    },
+    {
+      "expected_input": {
+        "day": "1.1",
+        "task": "Install Python 3.12+ and verify with `python --version`"
+      },
+      "expected_output": {
+        "day": "1.1",
+        "week_focus": "Environment & first programs",
+        "tasks": [
+          {
+            "index": 1,
+            "name": "Download Python 3.12 installer",
+            "duration_min": 30,
+            "output": "Python 3.12 installer downloaded to local machine",
+            "done_criteria": "Installer file exists and version is 3.12.x"
+          },
+          {
+            "index": 2,
+            "name": "Install Python 3.12",
+            "duration_min": 30,
+            "output": "Python 3.12 installed successfully",
+            "done_criteria": "Installation completed without errors"
+          },
+          {
+            "index": 3,
+            "name": "Verify with python --version",
+            "duration_min": 30,
+            "output": "Screenshot of terminal showing `Python 3.12.x`",
+            "done_criteria": "Command output starts with 'Python 3.12'"
+          },
+          {
+            "index": 4,
+            "name": "Write setup notes",
+            "duration_min": 30,
+            "output": "A short note: install path, version, and one issue encountered",
+            "done_criteria": "Note saved in study log with at least 3 lines"
+          }
+        ],
+        "log_reminder": "Please submit your study log now: attach the terminal screenshot and your setup notes. Deadline: today 23:00."
+      }
+    }
+  ]
+}
